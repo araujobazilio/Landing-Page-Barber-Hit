@@ -1,5 +1,4 @@
-import React from 'react';
-import { Star, Users, Trophy, Clock, CheckCircle, Play, Award, Target, Scissors, TrendingUp, User } from 'lucide-react';
+import { Star, Users, Trophy, Clock, CheckCircle, Play, Award, Target, Scissors, TrendingUp } from 'lucide-react';
 
 function App() {
   return (
@@ -11,9 +10,14 @@ function App() {
             <Scissors className="h-8 w-8 text-yellow-500" />
             <h1 className="text-2xl font-bold text-white">Felippe Caetano</h1>
           </div>
-          <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
+          <a 
+            href="https://go.hotmart.com/D101160980B?dp=1" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+          >
             COMEÇAR AGORA
-          </button>
+          </a>
         </div>
       </header>
 
@@ -59,6 +63,22 @@ function App() {
             </div>
           </div>
           
+          <div className="mb-10 bg-gradient-to-r from-yellow-500/20 to-yellow-600/20 p-6 rounded-xl border border-yellow-500/30 max-w-lg mx-auto">
+            <h3 className="text-2xl font-bold mb-2 text-white">Investimento Especial</h3>
+            <div className="flex flex-col items-center">
+              <p className="text-gray-400 line-through text-lg">De R$ 1.497,00 por apenas</p>
+              <p className="text-4xl font-black text-yellow-500 mb-2">R$ 997,00</p>
+              <p className="text-xl text-white mb-4">em 12x de <span className="font-bold">R$ 103,11</span> no cartão</p>
+              <div className="flex items-center justify-center space-x-2 text-red-500 font-semibold mb-4">
+                <Clock className="h-5 w-5" />
+                <span>Oferta por tempo limitado!</span>
+              </div>
+              <div className="bg-red-500/20 text-white p-3 rounded-lg text-sm mb-2 w-full text-center">
+                <span className="font-bold">ATENÇÃO:</span> Restam apenas 7 vagas com este valor!
+              </div>
+            </div>
+          </div>
+          
           <a 
             href="https://go.hotmart.com/D101160980B?dp=1" 
             target="_blank" 
@@ -77,8 +97,8 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="mb-8">
-                <div className="w-24 h-24 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mb-6">
-                  <User className="h-12 w-12 text-black" />
+                <div className="w-24 h-24 overflow-hidden rounded-full mb-6 border-2 border-yellow-500">
+                  <img src="/avatar.webp" alt="Felippe Caetano" className="w-full h-full object-cover" />
                 </div>
               </div>
               <h2 className="text-4xl font-bold mb-6 text-white">
@@ -109,6 +129,32 @@ function App() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="py-20 bg-black">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Veja o que o <span className="text-yellow-500">Felippe tem a dizer</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Descubra por que montar sua própria barbearia pode transformar sua vida profissional
+            </p>
+          </div>
+          
+          <div className="aspect-video w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl shadow-yellow-500/20">
+            <iframe 
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/oeH01DsR848" 
+              title="Montar barbearia ou trabalhar para os outros?" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen>
+            </iframe>
           </div>
         </div>
       </section>
@@ -245,11 +291,35 @@ function App() {
             Junte-se aos mais de 5.000 alunos que já transformaram suas vidas com o Barber HIT. Sua nova carreira como barbeiro profissional começa agora!
           </p>
           
+          <div className="bg-black/20 p-6 rounded-xl mb-8 max-w-lg mx-auto">
+            <div className="flex items-center justify-center mb-4">
+              <Clock className="h-6 w-6 text-black mr-2" />
+              <p className="text-xl font-bold text-black">OFERTA POR TEMPO LIMITADO!</p>
+            </div>
+            <div className="space-y-3 text-left mb-6">
+              <div className="flex items-start">
+                <CheckCircle className="h-5 w-5 text-black mr-2 flex-shrink-0 mt-1" />
+                <p className="text-black/90">Preço promocional válido somente até <span className="font-bold">10/08/2025</span></p>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="h-5 w-5 text-black mr-2 flex-shrink-0 mt-1" />
+                <p className="text-black/90">Apenas <span className="font-bold">7 vagas</span> restantes com este valor</p>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="h-5 w-5 text-black mr-2 flex-shrink-0 mt-1" />
+                <p className="text-black/90">Próximo lote com <span className="font-bold">aumento de 30%</span> no valor</p>
+              </div>
+            </div>
+            <div className="text-center text-black font-bold">
+              Não perca esta oportunidade única!
+            </div>
+          </div>
+          
           <a 
             href="https://go.hotmart.com/D101160980B?dp=1" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-block bg-black hover:bg-gray-900 text-white font-black text-xl px-12 py-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl"
+            className="inline-block bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-black text-xl px-12 py-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl"
           >
             <Play className="inline h-6 w-6 mr-2" />
             COMEÇAR AGORA
