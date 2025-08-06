@@ -14,6 +14,9 @@ function App() {
             href="https://go.hotmart.com/D101160980B?dp=1" 
             target="_blank" 
             rel="noopener noreferrer"
+            onClick={() => {
+              return gtag_report_conversion('https://go.hotmart.com/D101160980B?dp=1');
+            }}
             className="inline-block bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
           >
             COMEÇAR AGORA
@@ -83,6 +86,9 @@ function App() {
             href="https://go.hotmart.com/D101160980B?dp=1" 
             target="_blank" 
             rel="noopener noreferrer"
+            onClick={() => {
+              return gtag_report_conversion('https://go.hotmart.com/D101160980B?dp=1');
+            }}
             className="inline-block bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-black text-xl px-12 py-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-yellow-500/25"
           >
             <Play className="inline h-6 w-6 mr-2" />
@@ -319,6 +325,9 @@ function App() {
             href="https://go.hotmart.com/D101160980B?dp=1" 
             target="_blank" 
             rel="noopener noreferrer"
+            onClick={() => {
+              return gtag_report_conversion('https://go.hotmart.com/D101160980B?dp=1');
+            }}
             className="inline-block bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-black text-xl px-12 py-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl"
           >
             <Play className="inline h-6 w-6 mr-2" />
